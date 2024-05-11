@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rickroll</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <p>Carregando...</p>
+    </div>
+
+    <header>
+      <h1>Bem-vindo ao Rickroll!</h1>
+    </header>
+
+    <video id="video-background" autoplay muted loop="loop">
+      <source src="./assets/rickroll.mp4" type="video/mp4" />
+      navegador não suporta a tag de vídeo.
+    </video>
+
+    <div id="controls">
+      <input id="unmute-button" type="button" value="Desmutar 🔊" />
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>

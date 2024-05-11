@@ -1,0 +1,85 @@
+:root {
+  --background: #000;
+  --text-color: #d5fff4;
+  --loading-background: #000;
+  --button-text-color: #d5fff4;
+  --border-color: #232a28;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  width: 100vw;
+  color: var(--text-color);
+  height: 100vh;
+}
+
+#video-background {
+  width: 100%;
+  height: auto;
+  z-index: -1000;
+  margin-bottom: 10vh;
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--loading-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#loader p {
+  color: var(--text-color);
+  font-size: 24px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: var(--text-color);
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+input[type="button"] {
+  background: var(--background);
+  border: solid var(--border-color);
+  color: var(--text-color);
+  border-width: 0.5vw;
+  font-size: 5vw;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#controls input[type="button"]:hover {
+  background-color: #4e4e4e;
+}
+
+#controls input[type="button"]:focus {
+  outline: none;
+}
+
+#total-likes {
+  border: none;
+  width: 100%;
+  text-align: center;
+}
